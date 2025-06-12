@@ -350,16 +350,3 @@ left(90)
 repeat 3:
     forward(250)
     cloud()
-
-#---------------------------------------------------------------    
-
-#       Alle Eier wurden einzelnd gemacht gemacht,
-#       um die Farbe und Position zu ändern und 
-#       da alles definiert und die größen selbst 
-#       geschrieben wurden
-
-#Leistungsanforderungen:
-
-#   -Es wurde(-n) mind. 1 Schleife eingesetzt
-#   -Es wurde(-n) mind. 1 Funktion (def) eingesetzt
-#   -Es wurde(-n) mind. 1 Variable eingesetzt
