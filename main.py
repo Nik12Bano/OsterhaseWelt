@@ -1,4 +1,4 @@
-﻿# Turrtle Challange.py
+# Turrtle Challange.py
 
 # Import von den Paketen
 import turtle
@@ -10,6 +10,21 @@ t = turtle.Turtle()
 #Definitionen von Gegenstäden:
 
 
+#Defintition vom Blume
+def flower():
+    pd()
+    setPenColor(color)
+    setFillColor(color)
+    startPath()
+    repeat 6:
+        repeat 10:
+            back(1)
+            right(18)
+        left(120)
+    fillPath()  
+    pu()
+    forward(90)
+
 #Defintition vom Baum
 def tree():
     pd()
@@ -17,8 +32,8 @@ def tree():
     setPenColor("brown")
     forward(75)
     setLineWidth(5)
-    setPenColor("green")
-    setFillColor("green")
+    setPenColor("ForestGreen")
+    setFillColor("ForestGreen")
     startPath()
     repeat 12:
         repeat 30:
@@ -258,7 +273,8 @@ def egg1():
     back(55)
     setFillColor("GreenYellow")
     egg(36)
-  
+    
+    #Bewegung zur Platzierung der unteren Eier
     right(90)
     back(80) 
     right(90)
@@ -282,7 +298,7 @@ def egg1():
     egg(37)
     
 
-#Startet das Programm und kontrolliert die geschwindigkeit:
+#Startet das Programm und kontrolliert die Geschwindigkeit:
 makeTurtle()
 speed(-1)
 
@@ -290,13 +306,13 @@ speed(-1)
 size = 17
 
 #Wilkommens Text:
-print("----------------------------------------------------------------------------------------")
+print("------------------------------------------------------------------------------------------")
 print("Turtle-Challenge: Die Heimat des Osterhasen")
 print("BY Nikolai & Andrej")
 print("Hinweis: Für die Beste Erfahrung, setzte das Programm ins Vollbild!")
 print("ACHTUNG: Achte darauf, dass dein Screen im Format 16:9 ist.")
 print("d.h.: Bei einem PC / Mac funktioniert es nicht. (bzw. Schließe ein externes Display an!)")
-print("----------------------------------------------------------------------------------------")
+print("------------------------------------------------------------------------------------------")
 input("Bitte dieses Programm nicht als Eigenes ausgeben und / oder Fremdem Namen ausgeben. &copy Nikolai und Andrej Falls Sie mit diesen Bedingungen einverstanden sind, drücken Sie ENTER!")
 
 #Hintergrund
@@ -345,8 +361,19 @@ egg1()
 
 #Setzt 2 Wolken
 right(90)
-forward(500)
+forward(400)
 left(90)
 repeat 3:
     forward(250)
     cloud()
+    
+#Blumen
+left(90)
+forward(470)
+left(90)
+back(400)
+repeat 4:
+    colors = ["red", "MediumOrchid", "khaki", "DeepPink", "turquoise"]
+    for color in colors:
+        flower()
+        
